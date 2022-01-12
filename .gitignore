@@ -132,3 +132,4 @@ dmypy.json
 .vscode
 .idea
 *local_config.py
+*used_command.py
