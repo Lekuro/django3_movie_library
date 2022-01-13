@@ -22,4 +22,7 @@ urlpatterns = (
     path('api/', include('quickstart.urls')),
     path('def/', include('snippets.urls_def')),
     path('def-api/', include('snippets.urls_def_api')),
+    path('api/', include('snippets.urls_api')),
+    path('mixin/', include('snippets.urls_mixin')),
+    path('generic/', include('snippets.urls_generic')),
 )

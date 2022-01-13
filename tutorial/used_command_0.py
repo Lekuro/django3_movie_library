@@ -18,6 +18,6 @@
 # python manage.py runserver
 
 # http: // 127.0.0.1: 8000/
-# http: // 127.0.0.1: 8000/api/users/
+# http: // 127.0.0.1: 8000/users/
 # http: // 127.0.0.1: 8000/api-auth/logout/
 # http: // 127.0.0.1: 8000/admin/login/
