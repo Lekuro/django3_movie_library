@@ -55,7 +55,7 @@
 # pip install httpie
 # pip uninstall httpie
 # pip freeze > requirements.txt
-# http http://127.0.0.1:8000/snippets/
-# http http://127.0.0.1:8000/snippets/2/
+# http http://127.0.0.1:8000/def/snippets/
+# http http://127.0.0.1:8000/def/snippets/2/
 
-# http: // 127.0.0.1: 8000/snippets/
+# http://127.0.0.1:8000/def/snippets/

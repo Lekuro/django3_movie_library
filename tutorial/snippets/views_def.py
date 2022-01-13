@@ -1,6 +1,5 @@
 from django.http import HttpResponse, JsonResponse
 from django.views.decorators.csrf import csrf_exempt
-from rest_framework import serializers
 from rest_framework.parsers import JSONParser
 
 from snippets.models import Snippet
@@ -47,6 +46,6 @@ def snippet_detail(request, pk):
             return JsonResponse(serializer.data)
         return JsonResponse(serializer.errors, status=400)
 
-    elif request.method=='DELETE':
+    elif request.method == 'DELETE':
         snippet.delete()
         return HttpResponse(status=204)
