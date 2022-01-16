@@ -26,4 +26,5 @@ urlpatterns = (
     path('api/', include('snippets.urls_api')),
     path('mixin/', include('snippets.urls_mixin')),
     path('generic/', include('snippets.urls_generic')),
+    path('link/', include('snippets.urls_link')),
 )
