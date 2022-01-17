@@ -34,7 +34,7 @@ class SnippetViewSet(viewsets.ModelViewSet):
     """
     queryset = Snippet.objects.all()
     serializer_class = SnippetSerializer
-    permission_class = (
+    permission_classes = (
         permissions.IsAuthenticatedOrReadOnly, IsOwnerOrReadOnly)
 
     # method by default is GET or use method=
