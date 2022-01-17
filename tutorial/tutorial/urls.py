@@ -15,6 +15,14 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+from rest_framework import routers
+from rest_framework.routers import DefaultRouter
+
+from snippets.views_viewSets import SnippetViewSet, UserViewSet
+
+router = DefaultRouter()
+router.register(r'snippets', SnippetViewSet)
+router.register(r'users', UserViewSet)
 
 urlpatterns = (
     path('admin/', admin.site.urls),
@@ -27,4 +35,6 @@ urlpatterns = (
     path('mixin/', include('snippets.urls_mixin')),
     path('generic/', include('snippets.urls_generic')),
     path('link/', include('snippets.urls_link')),
+    # path('viewset/', include('snippets.urls_viewSets')),
+    path('viewset/', include(router.urls)),
 )
